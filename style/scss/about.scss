@@ -1,0 +1,163 @@
+.conteiner {
+	max-width: 1200px;
+	margin: 0px auto;
+}
+
+.about-conteiner {
+	padding-top: 90px;
+	padding-bottom: 110px;
+}
+
+.title {
+	margin-bottom: 12px;
+	font-size: 24px;
+	font-family: "Kaushan Script";
+	color: rgb(51, 51, 51);
+	line-height: 1.2;
+	text-align: center;
+}
+
+.header {
+	position: relative;
+	margin-bottom: 78px;
+	font-size: 30px;
+	font-family: "Montserrat";
+	color: rgb(51, 51, 51);
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1.2;
+	text-align: center;
+
+	&::before {
+		content: '';
+		position: absolute;
+		width: 60px;
+		height: 3px;
+		top: 69px;
+		left: 50%;
+		transform: translate(-50%);
+		background-color: #f38181;
+	}
+}
+
+.about-content {
+	display: block;
+	max-width: 1000px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: 0 auto;
+	margin-bottom: 96px;
+	font-size: 15px;
+	font-family: "Roboto";
+	color: rgb(153, 153, 153);
+	line-height: 1.6;
+	text-align: center;
+}
+
+.about-img {
+	display: flex;
+	justify-content: space-between;
+}
+
+.about-img-list {
+	position: relative;
+
+	&:hover {
+		background-color: #95e1d3;
+
+		.wrapper-effect {
+			display: block;
+		}
+	}
+
+	&:hover img {
+		position: relative;
+		top: -6px;
+		left: -12px;
+	}
+
+	.wrapper-effect {
+		display: none;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(rgb(243, 129, 129, 0.9) 0%, rgb(252, 227, 138, 0.9) 100%);
+		position: absolute;
+		top: -10px;
+		left: -12px;
+
+		.about-team {
+			display: block;
+			position: relative;
+			top: 50%;
+			transform: translate(0, -50%);
+			width: 100%;
+			font-size: 18px;
+			font-family: "Montserrat";
+			color: rgb(255, 255, 255);
+			font-weight: bold;
+			text-transform: uppercase;
+			line-height: 1.2;
+			text-align: center;
+
+			&::before {
+				content: "";
+				position: absolute;
+				top: -25px;
+				left: 50%;
+				transform: translate(-50%);
+				width: 31px;
+				height: 22px;
+				background-image: url(/image/about/USERS.svg);
+				background-size: contain;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1210px) {
+	.conteiner {
+		max-width: 960px;
+	}
+
+	.about-img {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+
+	.about-img-list {
+		margin-bottom: 60px;
+	}
+
+	.about-conteiner {
+		padding-bottom: 50px;
+	}
+}
+
+@media screen and (max-width: 970px) {
+	.conteiner {
+		max-width: 720px;
+	}
+}
+
+@media screen and (max-width: 730px) {
+	.conteiner {
+		max-width: 540px;
+	}
+
+	.about-conteiner {
+		padding-bottom: 15px;
+	}
+
+	.about-conteiner {
+		padding-top: 40px;
+	}
+
+	.about-content {
+		margin-bottom: 60px;
+	}
+
+	.about-img-list {
+		margin-bottom: 40px;
+	}
+}

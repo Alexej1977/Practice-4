@@ -1,0 +1,48 @@
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-arrow {
+  font-size: 0px;
+  z-index: 5;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.slick-prev {
+  position: absolute;
+  background-image: url(/image/slider/arrow-left.svg);
+  background-color: inherit;
+  width: 12px;
+  height: 22px;
+  top: 50%;
+  left: 24px;
+  transform: translate(0, -50%);
+}
+
+.slick-next {
+  position: absolute;
+  background-image: url(/image/slider/arrow-riht.svg);
+  background-color: inherit;
+  width: 12px;
+  height: 22px;
+  top: 50%;
+  right: 24px;
+  transform: translate(0, -50%);
+}
+
+@media screen and (max-width: 730px) {
+  .slick-prev {
+    left: 10px;
+  }
+
+  .slick-next {
+    right: 10px;
+  }
+}

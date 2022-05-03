@@ -1,0 +1,35 @@
+.open-map {
+	padding-top: 100px;
+	padding-bottom: 75px;
+	background: url(/image/map/map.png);
+	background-size: cover;
+	background-position: center;
+
+	.open-map-header {
+		margin-bottom: 0px;
+		font-size: 24px;
+		font-family: "Montserrat";
+		color: rgb(243, 129, 129);
+		font-weight: bold;
+		line-height: 1.2;
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: -40px;
+			left: 50%;
+			transform: translate(-50%);
+			width: 19px;
+			height: 25px;
+			background: url(/image/map/PIN.svg);
+			background-size: contain;
+		}
+	}
+
+	.header::before {
+		top: 42px;
+	}
+
+
+
+}

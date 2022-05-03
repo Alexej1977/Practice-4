@@ -1,0 +1,152 @@
+.blog {
+	padding-top: 110px;
+	padding-bottom: 110px;
+
+	@media screen and (max-width: 730px) {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	.blog-list {
+		display: flex;
+		justify-content: space-between;
+
+		@media screen and (max-width: 730px) {
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+
+		.blog-list-content {
+			position: relative;
+			padding-bottom: 53px;
+			width: 32%;
+
+			@media screen and (max-width: 730px) {
+				width: 47%;
+				margin-bottom: 30px;
+			}
+
+			@media screen and (max-width: 550px) {
+				width: 93%;
+			}
+
+			.blog-image {
+				width: 100%;
+				height: 240px;
+				margin-bottom: 18px;
+
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+
+			.date {
+				position: absolute;
+				left: -10px;
+				top: 160px;
+				width: 60px;
+				height: 72px;
+				background-color: #95e1d3;
+
+				.number {
+					padding-top: 13px;
+					margin-bottom: 3px;
+					display: block;
+					font-size: 30px;
+					font-family: "Montserrat";
+					color: rgb(255, 255, 255);
+					font-weight: bold;
+					text-transform: uppercase;
+					line-height: 1;
+					text-align: center;
+				}
+
+				.month {
+					display: block;
+					font-size: 10px;
+					font-family: "Montserrat";
+					font-style: italic;
+					color: rgb(255, 255, 255);
+					font-weight: 400;
+					line-height: 1.2;
+					text-align: center;
+				}
+			}
+
+			.blog-title {
+				margin-bottom: 11px;
+				font-size: 14px;
+				font-family: "Montserrat";
+				color: rgb(51, 51, 51);
+				text-transform: uppercase;
+				line-height: 1.2;
+				text-align: left;
+			}
+
+			.blog-content {
+				font-size: 15px;
+				font-family: "Roboto";
+				color: rgb(153, 153, 153);
+				line-height: 1.6;
+				text-align: left;
+			}
+
+			.number-of-hits {
+				position: absolute;
+				width: 100%;
+				bottom: 0px;
+				left: 0px;
+				padding-top: 13px;
+				border-top: #e5e5e5 1px solid;
+			}
+
+			.views {
+				position: relative;
+				padding-left: 26px;
+				padding-right: 11px;
+				font-size: 15px;
+				font-family: "Roboto";
+				color: rgb(153, 153, 153);
+				font-style: italic;
+				line-height: 1.6;
+				text-align: left;
+
+				&::before {
+					content: "";
+					position: absolute;
+					width: 19px;
+					height: 11px;
+					left: 0px;
+					top: 50%;
+					transform: translate(0, -50%);
+					background: url(/image/blog/VIEW.svg);
+				}
+			}
+
+			.coments {
+				position: relative;
+				padding-left: 20px;
+				font-size: 15px;
+				font-family: "Roboto";
+				color: rgb(153, 153, 153);
+				font-style: italic;
+				line-height: 1.6;
+				text-align: left;
+
+				&::before {
+					content: "";
+					position: absolute;
+					width: 16px;
+					height: 14px;
+					left: 0px;
+					top: 50%;
+					transform: translate(0, -50%);
+					background: url(/image/blog/SPEECH-BUBBLE.svg);
+				}
+			}
+
+		}
+	}
+}

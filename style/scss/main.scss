@@ -1,6 +1,47 @@
-body {
-	width: 900px;
-	height: 100%;
-	background-color: aqua;
-	color: black;
+* {
+	box-sizing: border-box;
+	outline: none;
 }
+
+a {
+	text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3 {
+	margin: 0;
+}
+
+ul {
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+
+button {
+	border: none;
+	padding: 0px
+}
+
+@import 'icon-font.scss';
+@import 'fonts.scss';
+@import 'header.scss';
+@import 'about.scss';
+@import 'facts.scss';
+@import 'services.scss';
+@import 'feauture.scss';
+@import 'service2.scss';
+@import 'quote.scss';
+@import 'ourteam.scss';
+@import 'logos.scss';
+@import 'work.scss';
+@import 'testomonial.scss';
+@import 'reviews.scss';
+@import 'blog.scss';
+@import 'map.scss';
+
+@import 'footer.scss';
+
+@import 'slick-slider.scss';

@@ -1,0 +1,415 @@
+body.open {
+	overflow: hidden;
+}
+
+.main-link {
+	display: flex;
+	justify-content: space-between;
+	justify-items: center;
+	align-items: center;
+	box-sizing: border-box;
+	max-width: 1220px;
+	padding-top: 27px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: 0 auto;
+}
+
+.link-logo {
+	font-size: 30px;
+	font-family: "Montserrat";
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	line-height: 120%;
+}
+
+.nav-conteiner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 625px;
+}
+
+.site-nav {
+	width: 565px;
+	padding-left: 20px;
+	padding-right: 45px;
+}
+
+.site-nav-list {
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.site-nav-link {
+	display: block;
+	font-size: 14px;
+	font-family: "Montserrat";
+	color: #fff;
+	text-transform: uppercase;
+	line-height: 36px;
+	text-align: center;
+
+	&.active {
+		color: #fce38a;
+		border-bottom: #fce38a 3px solid;
+	}
+}
+
+.mobil-nav {
+	position: absolute;
+	display: block;
+	width: 400px;
+	padding: 0px;
+	top: -120%;
+	right: 0px;
+	background-color: #efefef;
+	z-index: 1;
+
+	&.open {
+		top: 0px;
+		transition: all 0.30s;
+	}
+}
+
+.mobil-nav-list {
+	display: flex;
+	flex-direction: column;
+}
+
+.mobil-nav-link {
+	display: block;
+	border: #4f4f4f 1px solid;
+	color: #000;
+	text-align: center;
+	font-size: 24px;
+	line-height: 100px;
+
+
+}
+
+.nav-shoping-cart {
+	width: 80px;
+}
+
+.site-shoping-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.shoping-cart {
+	display: block;
+	width: 17px;
+	height: 36px;
+	background-image: url(/image/header/SHOPPING_CART.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.magnifing-glass {
+	display: block;
+	width: 17px;
+	height: 36px;
+	background-image: url(/image/header/MAGNIFYING_GLASS.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.burger {
+	display: none;
+	z-index: 2;
+}
+
+.poster-bg {
+	display: block;
+	position: absolute;
+	margin: 0px 0px;
+	width: 100%;
+	height: 1000px;
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+.poster-title {
+	padding-top: 158px;
+	padding-bottom: 31px;
+	text-align: center;
+}
+
+.poster-content {
+	margin-bottom: 36px;
+	font-size: 72px;
+	font-family: "Kaushan Script";
+	color: rgb(255, 255, 255);
+	line-height: 120%;
+
+}
+
+.poster-header {
+	position: relative;
+	margin-bottom: 106px;
+	font-size: 150px;
+	font-family: "Montserrat";
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 0.933;
+
+	&::before {
+		content: "";
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%);
+		bottom: -60px;
+		width: 60px;
+		height: 3px;
+		background-color: #fff;
+	}
+
+}
+
+.poster-button {
+	display: block;
+	width: 160px;
+	margin: 0 auto;
+	margin-bottom: 160px;
+	font-size: 14px;
+	font-family: "Montserrat";
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 40px;
+	border-style: solid;
+	border-width: 3px;
+	border-color: rgb(255, 255, 255);
+}
+
+.poster-slaider {
+	max-width: 1220px;
+	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: flex;
+	justify-content: space-between;
+	text-align: start;
+}
+
+.active::after {
+	content: "";
+	position: absolute;
+	top: -24px;
+	left: 0px;
+	width: 23%;
+	height: 3px;
+	background-color: rgb(243, 129, 129);
+}
+
+.poster-slider-list {
+	position: relative;
+	width: 23%;
+	font-size: 18px;
+	font-family: "Montserrat";
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1.2;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: -24px;
+		left: 0px;
+		width: 100%;
+		height: 3px;
+		background-color: #fff;
+		opacity: 50%;
+	}
+}
+
+
+span {
+	font-size: 24px;
+}
+
+@media screen and (max-width: 970px) {
+	.poster-bg {
+		height: 857px;
+	}
+
+	.conteiner {
+		max-width: 720px;
+	}
+
+	.poster-content {
+		font-size: 48px;
+	}
+
+	.poster-header {
+		font-size: 90px;
+	}
+}
+
+@media screen and (max-width: 730px) {
+
+	.poster-slider-list {
+		font-size: 14px;
+
+		span {
+			font-size: 20px;
+		}
+	}
+
+	.site-nav {
+		display: none;
+	}
+
+	.nav-conteiner {
+		width: 175px;
+		padding-right: 10px;
+	}
+
+	.burger {
+		position: relative;
+		display: block;
+		border-radius: 3px;
+		padding: 2px;
+		width: 25px;
+		height: 21px;
+		background-color: #fff;
+
+		.burger-icon {
+			display: block;
+			position: absolute;
+			width: 21px;
+			height: 3px;
+			top: 3px;
+			left: 2px;
+			background-color: #4f4f4f;
+			border-radius: 2px;
+
+			&::before {
+				content: "";
+				position: absolute;
+				width: 21px;
+				height: 3px;
+				top: 6px;
+				left: 0px;
+				background-color: #4f4f4f;
+				border-radius: 2px;
+			}
+
+			&::after {
+				content: "";
+				position: absolute;
+				width: 21px;
+				height: 3px;
+				top: 12px;
+				left: 0px;
+				background-color: #4f4f4f;
+				border-radius: 2px;
+			}
+		}
+
+		&.open .burger-icon {
+			transform: rotate(-45deg);
+			top: 9px;
+
+			&::before {
+				transform: rotate(90deg);
+				top: 0px;
+				left: 0px;
+			}
+
+			&::after {
+				display: none;
+			}
+		}
+	}
+
+	.poster-button {
+		margin-bottom: 110px;
+	}
+
+	.poster-slaider {
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.poster-slider-list {
+		width: 40%;
+		margin-bottom: 25px;
+
+		&::before {
+			top: -12px;
+		}
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.poster-bg {
+		height: 780px;
+	}
+
+	.poster-title {
+		padding-top: 120px;
+	}
+
+	.poster-content {
+		font-size: 32px;
+	}
+
+	.poster-header {
+		font-size: 60px;
+	}
+
+	.poster-button {
+		margin-bottom: 140px;
+	}
+
+	.active::after {
+		content: "";
+		top: -12px;
+	}
+
+	.mobil-nav {
+		position: fixed;
+		display: block;
+		width: 100%;
+		height: 100%;
+		padding: 0px;
+		top: -120%;
+		right: 0px;
+		background-color: #efefef;
+		z-index: 1;
+
+		&.open {
+			top: 0px;
+			transition: all 0.30s;
+		}
+	}
+
+	.mobil-nav-list {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.mobil-nav-link {
+		display: block;
+		border: #4f4f4f 1px solid;
+		color: #000;
+		text-align: center;
+		font-size: 24px;
+		line-height: 100px;
+
+
+	}
+
+}
