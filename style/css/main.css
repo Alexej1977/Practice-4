@@ -225,7 +225,7 @@ body.open {
   display: block;
   width: 17px;
   height: 36px;
-  background-image: url(/image/header/SHOPPING_CART.svg);
+  background-image: url(../../image/header/SHOPPING_CART.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -234,7 +234,7 @@ body.open {
   display: block;
   width: 17px;
   height: 36px;
-  background-image: url(/image/header/MAGNIFYING_GLASS.svg);
+  background-image: url(../../image/header/MAGNIFYING_GLASS.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1615,7 +1615,7 @@ span {
 }
 
 .reviews {
-  background-image: url(/image/reviews/reviews-bg.png);
+  background-image: url(../../image/reviews/reviews-bg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1850,7 +1850,7 @@ span {
   top: 50%;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
-  background: url(/image/blog/VIEW.svg);
+  background: url(../../image/blog/VIEW.svg);
 }
 .blog .blog-list .blog-list-content .coments {
   position: relative;
@@ -1871,13 +1871,13 @@ span {
   top: 50%;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
-  background: url(/image/blog/SPEECH-BUBBLE.svg);
+  background: url(../../image/blog/SPEECH-BUBBLE.svg);
 }
 
 .open-map {
   padding-top: 100px;
   padding-bottom: 75px;
-  background: url(/image/map/map.png);
+  background: url(../../image/map/map.png);
   background-size: cover;
   background-position: center;
 }
@@ -1898,7 +1898,7 @@ span {
           transform: translate(-50%);
   width: 19px;
   height: 25px;
-  background: url(/image/map/PIN.svg);
+  background: url(../../image/map/PIN.svg);
   background-size: contain;
 }
 .open-map .header::before {
@@ -2116,6 +2116,9 @@ footer {
   line-height: 1.2;
   text-align: center;
 }
+.wrapper-footer .main-footer-content .form-subscribe button:hover {
+  cursor: pointer;
+}
 @media screen and (max-width: 970px) {
   .wrapper-footer .main-footer-content .form-subscribe button {
     width: 100px;
@@ -2238,7 +2241,7 @@ footer .footer-link span {
 
 .slick-prev {
   position: absolute;
-  background-image: url(/image/slider/arrow-left.svg);
+  background-image: url(../../image/slider/arrow-left.svg);
   background-color: inherit;
   width: 12px;
   height: 22px;
@@ -2250,7 +2253,7 @@ footer .footer-link span {
 
 .slick-next {
   position: absolute;
-  background-image: url(/image/slider/arrow-riht.svg);
+  background-image: url(../../image/slider/arrow-riht.svg);
   background-color: inherit;
   width: 12px;
   height: 22px;

@@ -168,6 +168,10 @@ footer {
 			line-height: 1.2;
 			text-align: center;
 
+			&:hover {
+				cursor: pointer;
+			}
+
 			@media screen and (max-width: 970px) {
 				width: 100px;
 			}

@@ -1,7 +1,7 @@
 .open-map {
 	padding-top: 100px;
 	padding-bottom: 75px;
-	background: url(/image/map/map.png);
+	background: url(../../image/map/map.png);
 	background-size: cover;
 	background-position: center;
 
@@ -21,7 +21,7 @@
 			transform: translate(-50%);
 			width: 19px;
 			height: 25px;
-			background: url(/image/map/PIN.svg);
+			background: url(../../image/map/PIN.svg);
 			background-size: contain;
 		}
 	}
